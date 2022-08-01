@@ -70,10 +70,9 @@ function areYouPlayingBanjo(name) {
 // [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 function grow(x){
-    let arr = [1, 2, 3, 4, 5, 6]
-    
-    for (x in arr){
-      return x*arr
-    }
-   }
-   console.log(grow(0))
+    let result = 1
+          for (let i = 0; i < x.length; i++)
+              result = result * x[i]
+          return result
+  }
+  console.log(grow())
